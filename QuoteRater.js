@@ -20,7 +20,7 @@ const QuoteRater = () => {
             setCurrentIndex(currentIndex);
             setRatings(ratings);
         } else {
-            fetch('readwise_data_json_sample.json')
+            fetch('https://raw.githubusercontent.com/Jose-Pereira/quote_points/refs/heads/main/readwise_data_filtered.json?token=GHSAT0AAAAAACYG5T7DNX5ABS4KIC72ZW4EZYBHSNA')
                 .then(response => response.json())
                 .then(data => {
                     const shuffledData = shuffleArray(data);
